@@ -550,6 +550,7 @@
       if (this.component) {
         offset = this.component.offset();
         left = offset.left;
+        top = offset.top;
         if (this.pickerPosition == 'bottom-left' || this.pickerPosition == 'top-left') {
           left += this.component.outerWidth() - this.picker.outerWidth();
         }
@@ -567,8 +568,8 @@
       }
 
       if (this.component) {
-        top = top - containerOffset.top + 169;
-        left = left - containerOffset.left + 210;
+        top = top - containerOffset.top + 35;
+        left = left - containerOffset.left + 50;
       } else {
         if (this.pickerPosition == 'top-left' || this.pickerPosition == 'top-right') {
           top = offset.top - this.picker.outerHeight();
